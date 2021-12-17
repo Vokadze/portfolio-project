@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215570479-1"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-215570479-1');
+   </script>
+
+   <!-- Yandex.Metrika counter -->
+   <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+         m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+         m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(86917449, "init", {
+         clickmap: true,
+         trackLinks: true,
+         accurateTrackBounce: true,
+         webvisor: true
+      });
+   </script>
+   <noscript>
+      <div><img src="https://mc.yandex.ru/watch/86917449" style="position:absolute; left:-9999px;" alt="" /></div>
+   </noscript>
+   <!-- /Yandex.Metrika counter -->
+
+
+   <meta charset="UTF-8">
+   <title>Мой сайт портфолио - Webcademy.ru</title>
+
+   <!--  Инструкция для IE  -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <!--  Отображать страницу в масштабе 100%  -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Нормализация стилей -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+
+   <!-- jQuery Modal CSS-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+   <!-- Собственные стили -->
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="fonts/stylesheet.css">
+
+   <!--  Подключение веб-шрифтов  -->
+   <!--<link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">-->
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+   <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;800&family=Playfair+Display:wght@400;800&display=swap"
+      rel="stylesheet">
+
+   <!-- AOS. 1) Подключение CSS стилей -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+   <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon-16x16.png">
+
+   <!-- Put this script tag to the <head> of your page -->
+   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+
+</head>
+
+<body>
+
+
+   <!-- ...................................... 
+
+HEADER
+
+...................................... -->
+   <div class="header">
+      <div class="header__title wow fadeInUp" data-aos="zoom-in">Юрий Ключевский</div>
+      <div class="header__slogan wow fadeInUpBig" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+         Создание сайтов под ключ<br> HTML5 CSS3 JS jQuery</div>
+
+      <!-- Link to open the modal -->
+      <div class="wow fadeInUpBig">
+         <a href="#ex1" rel="modal:open" class="button"
+            onclick="ym(86917449, 'reachGoal', 'modal'); return true;">Перезвоните мне</a>
+      </div>
+
+
+      <!-- Modal HTML embedded directly into document -->
+      <div id="ex1" class="modal animate zoom-in">
+         <form action="php/mail.php" class="contact__form contact__form--modal" method="POST">
+
+            <!--Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Сайт Портфолио">
+            <input type="hidden" name="admin_email" value="ezdakov2477@yandex.ru">
+            <input type="hidden" name="email_from" value="info@cr25026.tmweb.ru">
+            <input type="hidden" name="form_subject" value="Обратный звонок с сайта">
+            <!--END Hidden Required Fields-->
+
+            <h2>Заполните заявку</h2>
+            <div class="subtitle">и мы свяжемся с вами</div>
+
+            <label for="f_name">Имя:</label>
+            <input type="text" id="f_name" name="Имя" placeholder="">
+
+            <label for="f_phone">Номер телефона:</label>
+            <input type="text" id="f_phone" name="Телефон" placeholder="">
+
+            <input type="submit" value="Отправить заявку">
+
+         </form>
+
+
+
+      </div>
+
+
+
+
+
+      <div class="header__arrow" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800" data-aos-offset="0">
+         <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+   </div>
+
+   <!-- ...................................... 
+
+PORTFOLIO
+...................................... -->
+   <div class="portfolio">
+      <div class="container">
+
+         <div class="title" data-aos="fade-up">
+            Мои работы</div>
+
+         <div class="row">
+
+            <!-- Работа в портфолио -->
+            <div class="col-4" data-aos="fade-up" data-aos-duration="500" data-aos-placement="bottom-bottom">
+               <div class="portfolio-item">
+                  <div class="portfolio-item__img">
+                     <img src="img/portfolio/project_organica.jpg" alt="Макет Органика">
+                  </div>
+                  <div class="portfolio-item__title">
+                     <a href="work-organica.html" class="title-block">Макет Органика</a>
+                  </div>
+                  <div class="portfolio-item__text">
+                     <p>Верстка одностраничного сайта по PSD макету.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- // Работа в портфолио -->
+
+            <!-- Работа в портфолио -->
+            <div class="col-4" data-aos="fade-up" data-aos-duration="500" data-aos-placement="bottom-bottom"
+               data-aos-delay="300">
+               <div class="portfolio-item">
+                  <div class="portfolio-item__img">
+                     <img src="img/portfolio/project_apollo.jpg" alt="Учебный макет Аполло">
+                  </div>
+                  <div class="portfolio-item__title">
+                     <a href="work-apollo.html" class="title-block">Учебный макет Аполло</a>
+                  </div>
+                  <div class="portfolio-item__text">
+                     <p>Верстка лендинга хостинг компании. Мобильная адаптивность.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- // Работа в портфолио -->
+
+            <!-- Работа в портфолио -->
+            <div class="col-4" data-aos="fade-up" data-aos-duration="500" data-aos-placement="bottom-bottom"
+               data-aos-delay="600">
+               <div class="portfolio-item">
+                  <div class="portfolio-item__img">
+                     <img src="img/portfolio/project_portfolio.jpg" alt="Личный сайт портфолио">
+                  </div>
+                  <div class="portfolio-item__title">
+                     <a href="work-portfolio.html" class="title-block">Личный сайт портфолио</a>
+                  </div>
+                  <div class="portfolio-item__text">
+                     <p>Верстка личного сайта портфолио на котором вы сейчас находитесь.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- // Работа в портфолио -->
+         </div>
+
+      </div>
+   </div>
+
+
+   <!-- ...................................... 
+
+FOOTER
+
+...................................... -->
+   <div class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-4" data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">
+               <p class="footer__name">Юрий Ключевский</p>
+               <p>HTML верстка и разработка сайтов</p>
+            </div>
+            <div class="col-4" data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">
+               <p class="footer__social">Давайте дружить:</p>
+               <p class="footer__social-icons">
+
+                  <a href="#" target="_blank">
+                     <i class="fa fa-vk" aria-hidden="true"></i>
+                  </a>
+
+                  <a href="#" target="_blank">
+                     <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+
+                  <a href="#" target="_blank">
+                     <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+
+                  <a href="#" target="_blank">
+                     <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+
+                  <a href="#" target="_blank">
+                     <i class="fa fa-youtube" aria-hidden="true"></i>
+                  </a>
+
+               </p>
+            </div>
+            <div class="col-4" data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">
+               <div><a href="#" class="button" target="_blank">связаться Вконтакте</a></div>
+               <p>Напишите мне, чтобы заказать или узнать<br> стоимость верстки вашего проекта</p>
+               <p><a href="contact-form.html">Отправить сообщение</a></p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- VK Widget -->
+   <div id="vk_community_messages"></div>
+   <script type="text/javascript">
+      VK.Widgets.CommunityMessages("vk_community_messages", 127607773, { expandTimeout: "15000", widgetPosition: "left", tooltipButtonText: "Есть вопрос?" });
+   </script>
+
+   <!-- AOS. 2) Подключение JS библиотеки -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   <!-- AOS. 3) Вызов JS библиотеки -->
+   <script>
+      AOS.init();
+   </script>
+
+   <!-- jQuery :) -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+   <!-- jQuery Modal -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+   <!-- Chatra {literal} -->
+   <script>
+      (function (d, w, c) {
+         w.ChatraID = 'YQRE7WwftqNadHbpj';
+         var s = d.createElement('script');
+         w[c] = w[c] || function () {
+            (w[c].q = w[c].q || []).push(arguments);
+         };
+         s.async = true;
+         s.src = 'https://call.chatra.io/chatra.js';
+         if (d.head) d.head.appendChild(s);
+      })(document, window, 'Chatra');
+   </script>
+   <!-- /Chatra {/literal} -->
+
+</body>
+
+</html>
